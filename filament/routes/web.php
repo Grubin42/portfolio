@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Event;
+use App\Models\Plant;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $event = Event::first();
+    $plant = Plant::first();
+
+    return view('welcome', ['event' => $event, 'plant' => $plant]);
 });

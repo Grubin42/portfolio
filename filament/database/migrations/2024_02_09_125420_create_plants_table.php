@@ -39,7 +39,7 @@ return new class extends Migration
             $table->boolean('availability');
             $table->string('litrage');
             $table->decimal('price');
-            $table->string('image');
+            $table->binary('image');
             $table->timestamps();
         });
     }

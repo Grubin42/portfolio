@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('date');
             $table->string('place');
-            $table->string('image');
+            $table->binary('image');
             $table->decimal('price');
             $table->string('hourly');
             $table->longText('desciption');

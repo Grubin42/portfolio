@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('status');
             $table->longText('description');
-            $table->string('image');
+            $table->binary('image');
             $table->timestamps();
         });
     }
